@@ -1,5 +1,22 @@
 # Personal website 
 
+A simple personal website using p5.js to create an animated background of Perlin noise and ASCII characters.
+
+### [Demo](https://khlebobul.github.io)
+<img width="800" alt="image" src="https://github.com/khlebobul/khlebobul.github.io/assets/77191581/19bc845c-8e73-4139-96d9-8f19c55fdb5e">
+
+### How to use?
+
+1. Feel free to clone this repository via link or Download ZIP button
+```
+git clone https://github.com/khlebobul/khlebobul.github.io
+```
+2. Change the content
+3. You can also play with colors, fonts and background
+4. Give this project a star 
+
+### Background p5.js
+
 Background was made with p5.js ([Link](https://editor.p5js.org/khlebobul/sketches/E-tW8xNKb))
 
 ```js
@@ -14,10 +31,10 @@ function draw() {
     noStroke();
     rectMode(CENTER);
     let spacing = 20;
-    let noiseScale = map(mouseX, 0, width, 0.005, 0.02); // Можно варьировать масштаб шума для лучшей визуализации
+    let noiseScale = map(mouseX, 0, width, 0.005, 0.02);
     for (let y = 0; y < height; y += spacing) {
         for (let x = 0; x < width; x += spacing) {
-            let n = noise(x * noiseScale, y * noiseScale, frameCount * 0.01); // Изменяем частоту кадра для анимации
+            let n = noise(x * noiseScale, y * noiseScale, frameCount * 0.01);
             let letter;
             if (n > 0.6) {
                 letter = "█";
