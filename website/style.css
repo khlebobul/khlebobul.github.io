@@ -14,9 +14,11 @@ canvas {
     z-index: 1;
 }
 .text-container {
+    overflow: auto;
     position: relative;
     z-index: 2;
-    color: rgb(35, 35, 35);
+    color: rgb(255, 255, 255);
+    height: 100%;
     padding: 10px;
 }
 
@@ -36,5 +38,5 @@ ul {
 
 a {
     text-decoration: none;
-    color: rgb(114, 114, 114);
+    color: rgb(194, 194, 194);
 }
