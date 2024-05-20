@@ -31,7 +31,7 @@ function setup() {
 function draw() {
     randomSeed(seed); // Reset the random seed for repeatability
     background(colorbg); // Clear the background in each frame
-    let plus = 10; // Grid step size
+    let plus = 12; // Grid step size
 
     // Double loop to iterate over all points in the grid
     for (let i = xOff; i < width - xOff; i += plus) {
@@ -46,6 +46,6 @@ function draw() {
         }
     }
 
-    t += 0.03; // Increment the time variable
+    t += 0.02; // Increment the time variable
     rez += 0.00001; // Increment the noise resolution
 }
