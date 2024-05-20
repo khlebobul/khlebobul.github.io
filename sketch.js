@@ -18,8 +18,7 @@ let mods = [];
 // The setup() function is executed once when the sketch starts
 function setup() {
     randomSeed(seed); // Set the random seed
-    mySize = min(windowWidth, windowHeight); // Determine the canvas size as the minimum of the window's width and height
-    createCanvas(mySize, mySize); // Create a square canvas
+    createCanvas(windowWidth, windowHeight); // Create a canvas that spans the entire window
     colorMode(RGB, 255); // Set the color mode to RGB with a range of 255
     colorbg = random(colors0); // Choose the background color (white)
     background(colorbg); // Set the background
@@ -40,10 +39,6 @@ function draw() {
             strokeWeight(random(0.1)); // Set a random line thickness
             var n = noise(i * rez + t, j * rez + t); // Generate Perlin noise
             let gray = n * 255; // Calculate gray value based on noise
-
-            stroke(gray); // Set the stroke color to gray
-            fill(gray, 100); // Set the fill color to gray with some transparency
-
             push(); // Save the current transformation state
             translate(i, j); // Move to the current grid point
             ellipse(0, 0, plus * n, n * plus); // Draw an ellipse with sizes dependent on the noise value
@@ -51,6 +46,6 @@ function draw() {
         }
     }
 
-    t += 0.01; // Increment the time variable
+    t += 0.03; // Increment the time variable
     rez += 0.00001; // Increment the noise resolution
 }
