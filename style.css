@@ -18,7 +18,7 @@ canvas {
     position: relative;
     z-index: 2;
     color: rgb(35, 35, 35);
-    padding: 20px;
+    padding: 10px;
 }
 
 div {
@@ -28,4 +28,13 @@ div {
 .title {
     font-family: 'JetBrains Mono', monospace;
     font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(114, 114, 114);
 }
