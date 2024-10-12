@@ -31,14 +31,6 @@ function draw() {
     }
 }
 
-function mousePressed() {
-    if (!isLooping()) {
-        loop();
-    } else {
-        noLoop();
-    }
-}
-
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
