@@ -41,6 +41,9 @@ ul {
 }
 
 a {
-    
     color: rgb(194, 194, 194);
+}
+
+.more {
+    padding-bottom: 30px;
 }
