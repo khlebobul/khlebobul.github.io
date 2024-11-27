@@ -40,6 +40,17 @@ ul {
     padding: 10px;
 }
 
+ul {
+    list-style-type: '჻ ';
+    padding-left: 20px;
+}
+
+ul ul {
+    list-style-type: '♡ ';
+}
+
+
+
 a {
     color: rgb(194, 194, 194);
 }
