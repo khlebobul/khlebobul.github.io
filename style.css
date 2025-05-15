@@ -17,7 +17,7 @@ canvas {
     overflow: auto;
     position: relative;
     z-index: 2;
-    color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
     height: 100%;
     padding: 10px;
 }
@@ -52,7 +52,7 @@ ul ul {
 
 
 a {
-    color: rgb(194, 194, 194);
+    color: rgb(170, 170, 170);
 }
 
 .more {
