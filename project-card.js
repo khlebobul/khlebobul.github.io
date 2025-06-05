@@ -49,6 +49,12 @@ class ProjectCard {
       card.appendChild(linksContainer);
     }
 
+    card.addEventListener('click', (e) => {
+      if (e.target.tagName !== 'A') {
+        window.open(this.mainLink, '_blank');
+      }
+    });
+
     return card;
   }
 }
