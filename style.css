@@ -58,3 +58,65 @@ a {
 .more {
     padding-bottom: 30px;
 }
+
+/* Project Cards */
+.projects-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    padding-right: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(170, 170, 170, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: rgba(170, 170, 170, 0.4);
+}
+
+.project-title {
+    margin-bottom: 8px;
+}
+
+.project-title a {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+}
+
+.project-title a:hover {
+    color: rgb(100, 100, 100);
+}
+
+.project-description {
+    color: rgb(100, 100, 100);
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.project-links {
+    font-size: 0.85em;
+}
+
+.project-links a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: rgb(120, 120, 120);
+}
+
+.link-separator {
+    color: rgb(170, 170, 170);
+}

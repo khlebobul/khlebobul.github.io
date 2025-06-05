@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
+    <script src="project-card.js"></script>
 </head>
 
 <body>
@@ -28,24 +29,7 @@
         </div>
         <div class="side_projects">
             <p class="my_side_projects title">side projects</p>
-            <ul>
-                <li><a href="https://boardbuddyapp.vercel.app" target="_blank">board buddy</a> // your ultimate board game companion
-                    <ul>
-                        <li><a href="https://apps.apple.com/ru/app/board-buddy-score-counter/id6743980638" target="_blank">app store</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.khlebobul.board_buddy" target="_blank">google play</a></li>
-                        <li><a href="https://github.com/khlebobul/board_buddy" target="_blank">github</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://knightsgraph.vercel.app" target="_blank">knight's graph</a> // fascinating puzzle game based on the ancient knight's tour problem
-                    <ul>
-                        <li><a href="https://apps.apple.com/us/app/knights-graph/id6737812039" target="_blank">app store</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.khlebobul.knights_graph" target="_blank">google play</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://pub.dev/packages/use_scramble" target="_blank">use_scramble</a> // lightweight package for random text animations</li>
-                <li><a href="https://pub.dev/packages/gen_art_bg" target="_blank">gen_art_bg</a> // animated generative art backgrounds collection flutter</li>
-                <li><a href="https://www.raycast.com/khlebobul" target="_blank">raycast extensions</a></li>
-            </ul>
+            <div id="projects-container" class="projects-grid"></div>
         </div>
         <div class="support">
             <p class="my_support title">support</p>
@@ -65,6 +49,11 @@
             </ul>
         </div>
         <script src="sketch.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                renderProjects('projects-container', projectsData);
+            });
+        </script>
 </body>
 
 </html>
