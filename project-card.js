@@ -88,8 +88,7 @@ const projectsData = [
   },
   {
     title: "knight's graph",
-    description:
-      "fascinating puzzle game based on the ancient knight's tour problem",
+    description: "fascinating puzzle game based on the ancient knight's tour problem",
     mainLink: "https://knightsgraph.vercel.app",
     additionalLinks: [
       {
@@ -118,6 +117,30 @@ const projectsData = [
     title: "raycast extensions",
     description: "helpful raycast extensions for developers",
     mainLink: "https://www.raycast.com/khlebobul",
+    additionalLinks: [],
+  },
+  {
+    title: "lego block image processor [experiments]",
+    description: "Images ➭ lego blocks instruction",
+    mainLink: "https://lego-processor.vercel.app",
+    additionalLinks: [],
+  },
+  {
+    title: "square ribbon [experiments]",
+    description: "figma plugin",
+    mainLink: "https://www.figma.com/community/plugin/1441862652881971511/square-ribbon",
+    additionalLinks: [],
+  },
+  {
+    title: "figure 8 [experiments]",
+    description: "companion for maintaining eye health",
+    mainLink: "https://khlebobul26.gumroad.com/l/figure8",
+    additionalLinks: [],
+  },
+  {
+    title: "wave logo generator [experiments]",
+    description: "logo buddy",
+    mainLink: "https://wave-logo.vercel.app/",
     additionalLinks: [],
   },
 ];
