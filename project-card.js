@@ -104,16 +104,41 @@ const projectsData = [
     ],
   },
   {
+    title: "not_static_icons",
+    description: "bautifully crafted animated icons for flutter made with lucide icons",
+    mainLink: "https://pub.dev/packages/not_static_icons",
+    additionalLinks: [
+      {
+        title: "demo",
+        url: "https://not-static-icons.vercel.app/",
+      },
+      {
+        title: "github",
+        url: "https://github.com/khlebobul/not_static_icons",
+      },
+    ],
+  },
+  {
     title: "use_scramble",
     description: "lightweight package for random text animations",
     mainLink: "https://pub.dev/packages/use_scramble",
-    additionalLinks: [],
+    additionalLinks: [
+      {
+        title: "github",
+        url: "https://github.com/khlebobul/use_scramble",
+      },
+    ],
   },
   {
     title: "gen_art_bg",
     description: "animated generative art backgrounds collection flutter",
     mainLink: "https://pub.dev/packages/gen_art_bg",
-    additionalLinks: [],
+    additionalLinks: [
+      {
+        title: "github",
+        url: "https://github.com/khlebobul/gen_art_bg",
+      },
+    ],
   },
   {
     title: "raycast extensions",
