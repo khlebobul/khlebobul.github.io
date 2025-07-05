@@ -84,6 +84,7 @@ const projectsData = [
         url: "https://play.google.com/store/apps/details?id=com.khlebobul.board_buddy",
       },
       { title: "github", url: "https://github.com/khlebobul/board_buddy" },
+      { title: "rustore", url: "https://www.rustore.ru/catalog/app/com.khlebobul.board_buddy" },
     ],
   },
   {
@@ -99,6 +100,7 @@ const projectsData = [
         title: "google play",
         url: "https://play.google.com/store/apps/details?id=com.khlebobul.knights_graph",
       },
+      { title: "rustore", url: "https://www.rustore.ru/catalog/app/com.khlebobul.knights_graph" },
     ],
   },
   {
