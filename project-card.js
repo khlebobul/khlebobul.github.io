@@ -1,14 +1,18 @@
 class ProjectCard {
   constructor(data) {
     this.title = data.title;
+    this.titleRu = data.titleRu || data.title;
     this.description = data.description;
+    this.descriptionRu = data.descriptionRu || data.description;
     this.mainLink = data.mainLink;
     this.additionalLinks = data.additionalLinks || [];
+    this.currentLang = localStorage.getItem('language') || 'en';
   }
 
   render() {
     const card = document.createElement("div");
     card.className = "project-card";
+    card.dataset.cardId = this.title.replace(/\s+/g, '-').toLowerCase();
 
     const titleElement = document.createElement("div");
     titleElement.className = "project-title";
@@ -16,12 +20,16 @@ class ProjectCard {
     const titleLink = document.createElement("a");
     titleLink.href = this.mainLink;
     titleLink.target = "_blank";
-    titleLink.textContent = this.title;
+    titleLink.textContent = this.currentLang === 'en' ? this.title : this.titleRu;
+    titleLink.dataset.en = this.title;
+    titleLink.dataset.ru = this.titleRu;
     titleElement.appendChild(titleLink);
 
     const descriptionElement = document.createElement("div");
     descriptionElement.className = "project-description";
-    descriptionElement.textContent = this.description;
+    descriptionElement.textContent = this.currentLang === 'en' ? this.description : this.descriptionRu;
+    descriptionElement.dataset.en = this.description;
+    descriptionElement.dataset.ru = this.descriptionRu;
 
     card.appendChild(titleElement);
     card.appendChild(descriptionElement);
@@ -34,7 +42,13 @@ class ProjectCard {
         const linkElement = document.createElement("a");
         linkElement.href = link.url;
         linkElement.target = "_blank";
-        linkElement.textContent = link.title;
+        
+        const titleEn = link.title;
+        const titleRu = link.titleRu || link.title;
+        
+        linkElement.textContent = this.currentLang === 'en' ? titleEn : titleRu;
+        linkElement.dataset.en = titleEn;
+        linkElement.dataset.ru = titleRu;
 
         linksContainer.appendChild(linkElement);
 
@@ -68,105 +82,152 @@ function renderProjects(containerId, projects) {
   });
 }
 
+function updateProjectsLanguage(lang) {
+  const elements = document.querySelectorAll('.project-card [data-' + lang + ']');
+  elements.forEach(function(element) {
+    element.textContent = element.getAttribute('data-' + lang);
+  });
+}
+
 // Projects data
 const projectsData = [
   {
     title: "board buddy",
+    titleRu: "board buddy",
     description: "your ultimate board game companion",
+    descriptionRu: "ваш идеальный компаньон для настольных игр",
     mainLink: "https://boardbuddyapp.vercel.app",
     additionalLinks: [
       {
         title: "app store",
+        titleRu: "app store",
         url: "https://apps.apple.com/ru/app/board-buddy-score-counter/id6743980638",
       },
       {
         title: "google play",
+        titleRu: "google play",
         url: "https://play.google.com/store/apps/details?id=com.khlebobul.board_buddy",
       },
-      { title: "github", url: "https://github.com/khlebobul/board_buddy" },
-      { title: "rustore", url: "https://www.rustore.ru/catalog/app/com.khlebobul.board_buddy" },
+      { 
+        title: "github", 
+        titleRu: "github", 
+        url: "https://github.com/khlebobul/board_buddy" 
+      },
+      { 
+        title: "rustore", 
+        titleRu: "rustore", 
+        url: "https://www.rustore.ru/catalog/app/com.khlebobul.board_buddy" 
+      },
     ],
   },
   {
     title: "knight's graph",
+    titleRu: "knight's graph",
     description: "fascinating puzzle game based on the ancient knight's tour problem",
+    descriptionRu: "увлекательная головоломка, основанная на древней задаче о ходе коня",
     mainLink: "https://knightsgraph.vercel.app",
     additionalLinks: [
       {
         title: "app store",
+        titleRu: "app store",
         url: "https://apps.apple.com/us/app/knights-graph/id6737812039",
       },
       {
         title: "google play",
+        titleRu: "google play",
         url: "https://play.google.com/store/apps/details?id=com.khlebobul.knights_graph",
       },
-      { title: "rustore", url: "https://www.rustore.ru/catalog/app/com.khlebobul.knights_graph" },
+      { 
+        title: "rustore", 
+        titleRu: "rustore", 
+        url: "https://www.rustore.ru/catalog/app/com.khlebobul.knights_graph" 
+      },
     ],
   },
   {
     title: "not_static_icons",
+    titleRu: "not_static_icons",
     description: "bautifully crafted animated icons for flutter made with lucide icons",
+    descriptionRu: "красиво созданные анимированные иконки для flutter на основе lucide icons",
     mainLink: "https://pub.dev/packages/not_static_icons",
     additionalLinks: [
       {
         title: "demo",
+        titleRu: "демо",
         url: "https://not-static-icons.vercel.app/",
       },
       {
         title: "github",
+        titleRu: "github",
         url: "https://github.com/khlebobul/not_static_icons",
       },
     ],
   },
   {
     title: "use_scramble",
+    titleRu: "use_scramble",
     description: "lightweight package for random text animations",
+    descriptionRu: "легкий пакет для случайных текстовых анимаций",
     mainLink: "https://pub.dev/packages/use_scramble",
     additionalLinks: [
       {
         title: "github",
+        titleRu: "github",
         url: "https://github.com/khlebobul/use_scramble",
       },
     ],
   },
   {
     title: "gen_art_bg",
+    titleRu: "gen_art_bg",
     description: "animated generative art backgrounds collection flutter",
+    descriptionRu: "коллекция анимированных генеративных фонов для flutter",
     mainLink: "https://pub.dev/packages/gen_art_bg",
     additionalLinks: [
       {
         title: "github",
+        titleRu: "github",
         url: "https://github.com/khlebobul/gen_art_bg",
       },
     ],
   },
   {
     title: "raycast extensions",
+    titleRu: "расширения для raycast",
     description: "helpful raycast extensions for developers",
+    descriptionRu: "полезные расширения raycast для разработчиков",
     mainLink: "https://www.raycast.com/khlebobul",
     additionalLinks: [],
   },
   {
     title: "lego block image processor [experiments]",
+    titleRu: "обработчик изображений lego [эксперименты]",
     description: "Images ➭ lego blocks instruction",
+    descriptionRu: "Изображения ➭ инструкция по сборке из lego",
     mainLink: "https://lego-processor.vercel.app",
     additionalLinks: [],
   },
   {
     title: "square ribbon [experiments]",
+    titleRu: "square ribbon [эксперименты]",
     description: "figma plugin",
+    descriptionRu: "плагин для figma",
     mainLink: "https://www.figma.com/community/plugin/1441862652881971511/square-ribbon",
     additionalLinks: [],
   },
   {
     title: "figure 8 [experiments]",
+    titleRu: "figure 8 [эксперименты]",
     description: "companion for maintaining eye health",
+    descriptionRu: "помощник для поддержания здоровья глаз",
     mainLink: "https://khlebobul26.gumroad.com/l/figure8",
     additionalLinks: [],
   },
   {
     title: "wave logo generator [experiments]",
+    titleRu: "генератор волновых логотипов [эксперименты]",
     description: "logo buddy",
+    descriptionRu: "помощник для создания логотипов",
     mainLink: "https://wave-logo.vercel.app/",
     additionalLinks: [],
   },

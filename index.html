@@ -10,21 +10,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
     <script src="project-card.js"></script>
+    <script src="language.js"></script>
 </head>
 
 <body>
+    <div class="language-switcher">
+        <button id="lang-en" class="lang-btn active">EN</button>
+        <button id="lang-ru" class="lang-btn">RU</button>
+    </div>
     <div class="text-container">
         <div class="about">
             <p class="title">khlebobul // gleb</p>
-            <p>a developer who loves generative art, beautiful and functional ui, photos and volleyball // about</p>
+            <p data-en="a developer who loves generative art, beautiful and functional ui, photos and volleyball // about" data-ru="разработчик, который любит генеративное искусство, красивый и функциональный интерфейс, фотографии и волейбол // обо мне">a developer who loves generative art, beautiful and functional ui, photos and volleyball // about</p>
         </div>
         <div class="contacts">
-            <p class="my_contacts title">contacts</p>
+            <p class="my_contacts title" data-en="contacts" data-ru="контакты">contacts</p>
             <p class="contact-links">
                 <a href="https://twitter.com/khlebobul" target="_blank">x</a> / 
                 <a href="https://github.com/khlebobul" target="_blank">github</a> / 
                 <a href="https://www.linkedin.com/in/khlebobul/" target="_blank">linkedin</a> / 
-                <a href="mailto:khlebobul@gmail.com">email</a>
+                <a href="mailto:khlebobul@gmail.com" data-en="email" data-ru="почта">email</a>
             </p>
         </div>
         <div class="side_projects">
@@ -32,14 +37,14 @@
             <div id="projects-container" class="projects-grid"></div>
         </div>
         <div class="support">
-            <p class="my_support title">support</p>
+            <p class="my_support title" data-en="support" data-ru="поддержка">support</p>
             <p class="contact-links">
-                <a href="https://t.me/khlebobul_dev" target="_blank">telegram stars</a> / 
-                <a href="https://yoomoney.ru/to/4100118234947004" target="_blank">yoomoney</a>
+                <a href="https://t.me/khlebobul_dev" target="_blank" data-en="telegram stars" data-ru="telegram звезды">telegram stars</a> / 
+                <a href="https://yoomoney.ru/to/4100118234947004" target="_blank" data-en="yoomoney" data-ru="юmoney">yoomoney</a>
             </p>
         </div>
         <div class="articles">
-            <p class="my_articles title">articles</p>
+            <p class="my_articles title" data-en="articles" data-ru="статьи">articles</p>
             <ul>
                 <li><a href="https://medium.com/@khlebobul/animating-svgs-in-flutter-without-rive-or-lottie-the-story-behind-my-animated-icon-package-c3808d2931cf" target="_blank">animating svgs in flutter without rive or lottie: the story behind my animated icon package</a></li>
                 <li><a href="https://medium.com/@khlebobul/scramble-effect-for-text-flutter-widget-d92df44dd7a8" target="_blank">scramble effect for text flutter widget</a></li>

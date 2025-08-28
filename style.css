@@ -6,6 +6,36 @@ html, body {
     overflow: hidden;
     font-family: 'JetBrains Mono', monospace;
 }
+
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    display: flex;
+    gap: 5px;
+}
+
+.lang-btn {
+    background: white;
+    border: 1px solid rgba(47, 47, 47, 0.2);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.lang-btn.active {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border-color: rgb(44, 44, 44);
+}
 canvas {
     display: block;
     position: absolute;
