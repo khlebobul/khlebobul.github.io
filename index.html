@@ -54,10 +54,15 @@
                 <li><a href="https://medium.com/@khlebobul/animated-grid-background-in-flutter-fda98db76bdb" target="_blank">animated grid background in flutter</a></li>
             </ul>
         </div>
+        <div class="experiments">
+            <p class="my_experiments title" data-en="experiments" data-ru="эксперименты">experiments</p>
+            <div id="experiments-container" class="projects-grid"></div>
+        </div>
         <script src="sketch.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 renderProjects('projects-container', projectsData);
+                renderProjects('experiments-container', experimentsData);
             });
         </script>
 </body>
