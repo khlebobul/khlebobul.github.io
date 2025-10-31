@@ -113,6 +113,8 @@ a {
     padding: 15px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -145,6 +147,7 @@ a {
 
 .project-links {
     font-size: 14px;
+    margin-top: auto;
 }
 
 .project-links a {

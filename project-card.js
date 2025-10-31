@@ -94,8 +94,8 @@ const projectsData = [
   {
     title: "pegma",
     titleRu: "pegma",
-    description: "discover the pure challenge of the classic peg solitaire — free, open source, and fun to master!",
-    descriptionRu: "откройте для себя настоящий вызов классической игры peg solitaire — бесплатно, с открытым исходным кодом и увлекательно для всех!",
+    description: "pure challenge of the classic peg solitaire — free, open source, and fun to master!",
+    descriptionRu: "настоящий вызов классической игры peg solitaire — бесплатно, с открытым исходным кодом и увлекательно для всех!",
     mainLink: "https://pegma.vercel.app",
     additionalLinks: [
       {
