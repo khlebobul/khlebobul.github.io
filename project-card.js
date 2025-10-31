@@ -92,6 +92,35 @@ function updateProjectsLanguage(lang) {
 // Projects data
 const projectsData = [
   {
+    title: "pegma",
+    titleRu: "pegma",
+    description: "discover the pure challenge of the classic peg solitaire — free, open source, and fun to master!",
+    descriptionRu: "откройте для себя настоящий вызов классической игры peg solitaire — бесплатно, с открытым исходным кодом и увлекательно для всех!",
+    mainLink: "https://pegma.vercel.app",
+    additionalLinks: [
+      {
+        title: "app store",
+        titleRu: "app store",
+        url: "https://apps.apple.com/ru/app/pegma-peg-solitaire/id6754343848",
+      },
+      {
+        title: "google play",
+        titleRu: "google play",
+        url: "https://play.google.com/store/apps/details?id=com.khlebobul.pegma",
+      },
+      {
+        title: "github",
+        titleRu: "github",
+        url: "https://github.com/khlebobul/pegma"
+      },
+      {
+        title: "rustore",
+        titleRu: "rustore",
+        url: "https://www.rustore.ru/catalog/app/com.khlebobul.pegma"
+      },
+    ],
+  },
+  {
     title: "board buddy",
     titleRu: "board buddy",
     description: "your ultimate board game companion",
