@@ -7,59 +7,67 @@
     <title>khlebobul</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
     <script src="project-card.js"></script>
     <script src="language.js"></script>
 </head>
 
 <body>
-    <div class="language-switcher">
-        <button id="lang-en" class="lang-btn active">EN</button>
-        <button id="lang-ru" class="lang-btn">RU</button>
-    </div>
     <div class="text-container">
-        <div class="about">
-            <p class="title">khlebobul // gleb</p>
-            <p data-en="a developer who loves generative art, beautiful and functional ui, photos and volleyball // about" data-ru="разработчик, который любит генеративное искусство, красивый и функциональный интерфейс, фотографии и волейбол // обо мне">a developer who loves generative art, beautiful and functional ui, photos and volleyball // about</p>
+        <div class="header-bar border-bottom">
+            <div class="site-title border-right">KHLEBOBUL</div>
+            <div class="language-switcher">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-ru" class="lang-btn">RU</button>
+            </div>
         </div>
-        <div class="contacts">
-            <p class="my_contacts title" data-en="contacts" data-ru="контакты">contacts</p>
-            <p class="contact-links">
-                <a href="https://twitter.com/khlebobul" target="_blank">x</a> / 
-                <a href="https://github.com/khlebobul" target="_blank">github</a> / 
-                <a href="https://www.linkedin.com/in/khlebobul/" target="_blank">linkedin</a> / 
-                <a href="mailto:khlebobul@gmail.com" data-en="email" data-ru="почта">email</a>
-            </p>
+
+        <div class="contacts border-bottom">
+            <div class="grid-item">
+                <p class="my_contacts title" data-en="contacts" data-ru="контакты">contacts</p>
+                <p class="contact-links">
+                    <a href="https://twitter.com/khlebobul" target="_blank">x</a> / 
+                    <a href="https://github.com/khlebobul" target="_blank">github</a> / 
+                    <a href="https://www.linkedin.com/in/khlebobul/" target="_blank">linkedin</a> / 
+                    <a href="mailto:khlebobul@gmail.com" data-en="email" data-ru="почта">email</a>
+                </p>
+            </div>
         </div>
+
         <div class="side_projects">
-            <p class="my_side_projects title">side projects</p>
-            <div id="projects-container" class="projects-grid"></div>
+            <div class="section-header border-bottom">
+                <p class="my_side_projects title">side projects</p>
+            </div>
+            <div id="projects-container" class="projects-grid border-bottom"></div>
         </div>
-        <div class="support">
-            <p class="my_support title" data-en="support" data-ru="поддержка">support</p>
-            <p class="contact-links">
-                <a href="https://t.me/khlebobul_dev" target="_blank" data-en="telegram stars" data-ru="telegram звезды">telegram stars</a> / 
-                <a href="https://yoomoney.ru/to/4100118234947004" target="_blank" data-en="yoomoney" data-ru="юmoney">yoomoney</a>
-            </p>
+
+        <div class="grid-2-col border-bottom">
+            <div class="support grid-item border-right">
+                <p class="my_support title" data-en="support" data-ru="поддержка">support</p>
+                <p class="contact-links">
+                    <a href="https://t.me/khlebobul_dev" target="_blank" data-en="telegram stars" data-ru="telegram звезды">telegram stars</a> / 
+                    <a href="https://yoomoney.ru/to/4100118234947004" target="_blank" data-en="yoomoney" data-ru="юmoney">yoomoney</a>
+                </p>
+            </div>
+            <div class="articles grid-item">
+                <p class="my_articles title" data-en="articles" data-ru="статьи">articles</p>
+                <ul>
+                    <li><a href="https://medium.com/@khlebobul/voice-control-in-flutter-how-to-add-local-speech-recognition-to-your-app-4bcd96bfd896" target="_blank">voice control in flutter: how to add local speech recognition to your app</a></li>
+                    <li><a href="https://medium.com/@khlebobul/animating-svgs-in-flutter-without-rive-or-lottie-the-story-behind-my-animated-icon-package-c3808d2931cf" target="_blank">animating svgs in flutter without rive or lottie: the story behind my animated icon package</a></li>
+                    <li><a href="https://medium.com/@khlebobul/scramble-effect-for-text-flutter-widget-d92df44dd7a8" target="_blank">scramble effect for text flutter widget</a></li>
+                    <li><a href="https://medium.com/@khlebobul/how-to-work-with-dynamic-island-in-the-flutter-application-89851b0d9887" target="_blank">how to work with dynamic island in the flutter application</a></li>
+                    <li><a href="https://medium.com/@khlebobul/ascii-camera-effect-with-flutter-5433029f4387" target="_blank">ascii camera effect with flutter</a></li>
+                    <li><a href="https://medium.com/@khlebobul/adding-a-bit-of-generative-art-to-a-flutter-project-13b22dd4f274" target="_blank">adding a bit of generative art to a flutter project</a></li>
+                    <li><a href="https://medium.com/@khlebobul/animated-grid-background-in-flutter-fda98db76bdb" target="_blank">animated grid background in flutter</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="articles">
-            <p class="my_articles title" data-en="articles" data-ru="статьи">articles</p>
-            <ul>
-                <li><a href="https://medium.com/@khlebobul/voice-control-in-flutter-how-to-add-local-speech-recognition-to-your-app-4bcd96bfd896" target="_blank">voice control in flutter: how to add local speech recognition to your app</a></li>
-                <li><a href="https://medium.com/@khlebobul/animating-svgs-in-flutter-without-rive-or-lottie-the-story-behind-my-animated-icon-package-c3808d2931cf" target="_blank">animating svgs in flutter without rive or lottie: the story behind my animated icon package</a></li>
-                <li><a href="https://medium.com/@khlebobul/scramble-effect-for-text-flutter-widget-d92df44dd7a8" target="_blank">scramble effect for text flutter widget</a></li>
-                <li><a href="https://medium.com/@khlebobul/how-to-work-with-dynamic-island-in-the-flutter-application-89851b0d9887" target="_blank">how to work with dynamic island in the flutter application</a></li>
-                <li><a href="https://medium.com/@khlebobul/ascii-camera-effect-with-flutter-5433029f4387" target="_blank">ascii camera effect with flutter</a></li>
-                <li><a href="https://medium.com/@khlebobul/adding-a-bit-of-generative-art-to-a-flutter-project-13b22dd4f274" target="_blank">adding a bit of generative art to a flutter project</a></li>
-                <li><a href="https://medium.com/@khlebobul/animated-grid-background-in-flutter-fda98db76bdb" target="_blank">animated grid background in flutter</a></li>
-            </ul>
-        </div>
+
         <div class="experiments">
-            <p class="my_experiments title" data-en="experiments" data-ru="эксперименты">experiments</p>
-            <div id="experiments-container" class="projects-grid"></div>
+            <div class="section-header border-bottom">
+                <p class="my_experiments title" data-en="experiments" data-ru="эксперименты">experiments</p>
+            </div>
+            <div id="experiments-container" class="projects-grid border-bottom"></div>
         </div>
-        <script src="sketch.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 renderProjects('projects-container', projectsData);
