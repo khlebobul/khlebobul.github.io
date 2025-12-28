@@ -304,4 +304,12 @@ const experimentsData = [
     mainLink: "https://github.com/khlebobul/dynamic_island_pet",
     additionalLinks: [],
   },
+  {
+    title: "build123d_models",
+    titleRu: "build123d models",
+    description: "a collection of 3d models created using build123d",
+    descriptionRu: "коллекция 3d моделей, созданных через build123d",
+    mainLink: "https://github.com/khlebobul/build123d_models",
+    additionalLinks: [],
+  },
 ];
