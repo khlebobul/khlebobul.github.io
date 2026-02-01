@@ -229,14 +229,6 @@ const projectsData = [
     additionalLinks: [],
   },
   {
-    title: "lego block image processor",
-    titleRu: "обработчик изображений lego",
-    description: "Images ➭ lego blocks instruction",
-    descriptionRu: "Изображения ➭ инструкция по сборке из lego",
-    mainLink: "https://lego-processor.vercel.app",
-    additionalLinks: [],
-  },
-  {
     title: "square ribbon",
     titleRu: "square ribbon",
     description: "figma plugin",
@@ -310,6 +302,14 @@ const experimentsData = [
     description: "a collection of 3d models created using build123d",
     descriptionRu: "коллекция 3d моделей, созданных через build123d",
     mainLink: "https://github.com/khlebobul/build123d_models",
+    additionalLinks: [],
+  },
+  {
+    title: "lego block image processor",
+    titleRu: "обработчик изображений lego",
+    description: "Images ➭ lego blocks instruction",
+    descriptionRu: "Изображения ➭ инструкция по сборке из lego",
+    mainLink: "https://lego-processor.vercel.app",
     additionalLinks: [],
   },
 ];
