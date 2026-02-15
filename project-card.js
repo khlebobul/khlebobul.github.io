@@ -221,6 +221,14 @@ const projectsData = [
     ],
   },
   {
+    title: "speed reader",
+    titleRu: "скорочтение - speed reader",
+    description: "chrome extensions to improve reading speed with fast, sequential visual presentation",
+    descriptionRu: "расширения для chrome для улучшения скорости чтения",
+    mainLink: "https://chromewebstore.google.com/detail/speed-reader/iifbkjcdekfokhpjbiabfgjlloabpdlp",
+    additionalLinks: [],
+  },
+  {
     title: "raycast extensions",
     titleRu: "расширения для raycast",
     description: "helpful raycast extensions for developers",
