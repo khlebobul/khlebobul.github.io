@@ -229,6 +229,14 @@ const projectsData = [
     additionalLinks: [],
   },
   {
+    title: "pixel art",
+    titleRu: "pixel art",
+    description: "images → pixel art chrome extensions",
+    descriptionRu: "картинки → pixel art расширения",
+    mainLink: "https://chromewebstore.google.com/detail/pixel-art/hoelbnpckhabboheiepjdehipgmlkina",
+    additionalLinks: [],
+  },
+  {
     title: "raycast extensions",
     titleRu: "расширения для raycast",
     description: "helpful raycast extensions for developers",
