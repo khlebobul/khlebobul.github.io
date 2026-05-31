@@ -221,6 +221,14 @@ const projectsData = [
     ],
   },
   {
+    title: "table of contents generator",
+    titleRu: "генератор оглавления",
+    description: "chrome extension to generate table of contents for any webpage",
+    descriptionRu: "расширение для chrome для генерации оглавления для любой страницы",
+    mainLink: "https://chromewebstore.google.com/detail/table-of-contents-generat/epdcdkmalfmenpieemggjjijcnnohfoo",
+    additionalLinks: [],
+  },
+  {
     title: "speed reader",
     titleRu: "скорочтение - speed reader",
     description: "chrome extension to improve reading speed with fast, sequential visual presentation",
