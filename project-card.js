@@ -92,6 +92,22 @@ function updateProjectsLanguage(lang) {
 // Projects data
 const projectsData = [
   {
+    title: "speed reader",
+    titleRu: "speed reader",
+    description: "macos app for speed reading with rsvp technology",
+    descriptionRu: "приложение для macos для скорочтения с технологией rsvp",
+    mainLink: "https://speed-reader.pro",
+    additionalLinks: [],
+  },
+  {
+    title: "speed reader (extension)",
+    titleRu: "speed reader (расширение)",
+    description: "chrome extension to improve reading speed with fast, sequential visual presentation",
+    descriptionRu: "расширение для chrome для улучшения скорости чтения",
+    mainLink: "https://chromewebstore.google.com/detail/speed-reader/iifbkjcdekfokhpjbiabfgjlloabpdlp",
+    additionalLinks: [],
+  },
+  {
     title: "pegma",
     titleRu: "pegma",
     description: "pure challenge of the classic peg solitaire — free, open source, and fun to master!",
@@ -226,14 +242,6 @@ const projectsData = [
     description: "chrome extension to generate table of contents for any webpage",
     descriptionRu: "расширение для chrome для генерации оглавления для любой страницы",
     mainLink: "https://chromewebstore.google.com/detail/table-of-contents-generat/epdcdkmalfmenpieemggjjijcnnohfoo",
-    additionalLinks: [],
-  },
-  {
-    title: "speed reader",
-    titleRu: "скорочтение - speed reader",
-    description: "chrome extension to improve reading speed with fast, sequential visual presentation",
-    descriptionRu: "расширение для chrome для улучшения скорости чтения",
-    mainLink: "https://chromewebstore.google.com/detail/speed-reader/iifbkjcdekfokhpjbiabfgjlloabpdlp",
     additionalLinks: [],
   },
   {
