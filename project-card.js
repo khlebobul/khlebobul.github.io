@@ -129,11 +129,6 @@ const projectsData = [
         titleRu: "github",
         url: "https://github.com/khlebobul/pegma"
       },
-      {
-        title: "rustore",
-        titleRu: "rustore",
-        url: "https://www.rustore.ru/catalog/app/com.khlebobul.pegma"
-      },
     ],
   },
   {
@@ -157,12 +152,7 @@ const projectsData = [
         title: "github", 
         titleRu: "github", 
         url: "https://github.com/khlebobul/board_buddy" 
-      },
-      { 
-        title: "rustore", 
-        titleRu: "rustore", 
-        url: "https://www.rustore.ru/catalog/app/com.khlebobul.board_buddy" 
-      },
+      }
     ],
   },
   {
@@ -181,11 +171,6 @@ const projectsData = [
         title: "google play",
         titleRu: "google play",
         url: "https://play.google.com/store/apps/details?id=com.khlebobul.knights_graph",
-      },
-      { 
-        title: "rustore", 
-        titleRu: "rustore", 
-        url: "https://www.rustore.ru/catalog/app/com.khlebobul.knights_graph" 
       },
     ],
   },
