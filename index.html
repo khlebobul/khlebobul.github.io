@@ -4,83 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>khlebobul</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Independent developer building focused apps, tools, and playful experiments.">
+    <title>khlebobul — independent developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="project-card.js"></script>
-    <script src="language.js"></script>
+    <script src="project-card.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="header-left">
-                <h1 class="logo">KHLEBOBUL</h1>
-            </div>
-            <div class="header-right">
-                <nav class="contacts-nav">
-                    <a href="https://twitter.com/khlebobul" target="_blank">x (twitter)</a>
-                    <span class="dot">·</span>
-                    <a href="https://github.com/khlebobul" target="_blank">github</a>
-                    <span class="dot">·</span>
-                    <a href="https://www.linkedin.com/in/khlebobul/" target="_blank">linkedin</a>
-                    <span class="dot">·</span>
-                    <a href="mailto:khlebobul@gmail.com" data-en="email" data-ru="почта">email</a>
-                </nav>
-                <div class="language-switcher">
-                    <button id="lang-en" class="lang-btn active">EN</button>
-                    <button id="lang-ru" class="lang-btn">RU</button>
-                </div>
-            </div>
+    <div class="page">
+        <header class="site-header">
+            <a class="wordmark" href="#top" aria-label="Back to top">khlebobul<span>®</span></a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#work">work</a>
+                <a href="#lab">lab</a>
+                <a href="#writing">writing</a>
+            </nav>
         </header>
 
-        <!-- Projects Section -->
-        <section class="section" id="projects-section">
-            <div class="section-header">
-                <h2 class="section-title" data-en="Projects" data-ru="Проекты">Projects</h2>
-                <span class="section-count" id="projects-count"></span>
-            </div>
-            <div id="projects-container" class="cards-grid"></div>
-        </section>
+        <main id="top">
+            <section class="hero" aria-label="Social links">
+                <nav class="socials">
+                    <a href="mailto:khlebobul@gmail.com">Email ↗</a>
+                    <a href="https://github.com/khlebobul" target="_blank" rel="noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/khlebobul/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+                    <a href="https://twitter.com/khlebobul" target="_blank" rel="noreferrer">X ↗</a>
+                </nav>
+            </section>
 
-        <!-- Experiments Section -->
-        <section class="section" id="experiments-section">
-            <div class="section-header">
-                <h2 class="section-title" data-en="Experiments" data-ru="Эксперименты">Experiments</h2>
-                <span class="section-count" id="experiments-count"></span>
-            </div>
-            <div id="experiments-container" class="cards-grid"></div>
-        </section>
+            <section class="section" id="work" aria-labelledby="work-title">
+                <header class="section-header">
+                    <p>01 / Work</p>
+                    <h2 id="work-title">Selected projects <sup id="projects-count"></sup></h2>
+                </header>
+                <div id="projects-container" class="work-grid"></div>
+            </section>
 
-        <!-- Articles Section -->
-        <section class="section" id="articles-section">
-            <div class="section-header">
-                <h2 class="section-title" data-en="Articles" data-ru="Статьи">Articles</h2>
-                <span class="section-count">7</span>
-            </div>
-            <ul class="articles-list">
-                <li><a href="https://medium.com/@khlebobul/voice-control-in-flutter-how-to-add-local-speech-recognition-to-your-app-4bcd96bfd896" target="_blank">Voice control in Flutter: how to add local speech recognition to your app</a></li>
-                <li><a href="https://medium.com/@khlebobul/animating-svgs-in-flutter-without-rive-or-lottie-the-story-behind-my-animated-icon-package-c3808d2931cf" target="_blank">Animating SVGs in Flutter without Rive or Lottie</a></li>
-                <li><a href="https://medium.com/@khlebobul/scramble-effect-for-text-flutter-widget-d92df44dd7a8" target="_blank">Scramble effect for text Flutter widget</a></li>
-                <li><a href="https://medium.com/@khlebobul/how-to-work-with-dynamic-island-in-the-flutter-application-89851b0d9887" target="_blank">How to work with Dynamic Island in Flutter</a></li>
-                <li><a href="https://medium.com/@khlebobul/ascii-camera-effect-with-flutter-5433029f4387" target="_blank">ASCII camera effect with Flutter</a></li>
-                <li><a href="https://medium.com/@khlebobul/adding-a-bit-of-generative-art-to-a-flutter-project-13b22dd4f274" target="_blank">Adding generative art to a Flutter project</a></li>
-                <li><a href="https://medium.com/@khlebobul/animated-grid-background-in-flutter-fda98db76bdb" target="_blank">Animated grid background in Flutter</a></li>
-            </ul>
-        </section>
+            <section class="section" id="lab" aria-labelledby="lab-title">
+                <header class="section-header">
+                    <p>02 / Lab</p>
+                    <h2 id="lab-title">Experiments <sup id="experiments-count"></sup></h2>
+                </header>
+                <div id="experiments-container" class="work-grid lab-grid"></div>
+            </section>
+
+            <section class="section" id="writing" aria-labelledby="writing-title">
+                <header class="section-header">
+                    <p>03 / Writing</p>
+                    <h2 id="writing-title">Articles <sup>7</sup></h2>
+                </header>
+                <ol class="articles-list">
+                    <li><a href="https://medium.com/@khlebobul/voice-control-in-flutter-how-to-add-local-speech-recognition-to-your-app-4bcd96bfd896" target="_blank" rel="noreferrer"><span>Voice control in Flutter: local speech recognition</span><small>Medium ↗</small></a></li>
+                    <li><a href="https://medium.com/@khlebobul/animating-svgs-in-flutter-without-rive-or-lottie-the-story-behind-my-animated-icon-package-c3808d2931cf" target="_blank" rel="noreferrer"><span>Animating SVGs in Flutter without Rive or Lottie</span><small>Medium ↗</small></a></li>
+                    <li><a href="https://medium.com/@khlebobul/scramble-effect-for-text-flutter-widget-d92df44dd7a8" target="_blank" rel="noreferrer"><span>Scramble effect for text Flutter widget</span><small>Medium ↗</small></a></li>
+                    <li><a href="https://medium.com/@khlebobul/how-to-work-with-dynamic-island-in-the-flutter-application-89851b0d9887" target="_blank" rel="noreferrer"><span>Dynamic Island in a Flutter application</span><small>Medium ↗</small></a></li>
+                    <li><a href="https://medium.com/@khlebobul/ascii-camera-effect-with-flutter-5433029f4387" target="_blank" rel="noreferrer"><span>ASCII camera effect with Flutter</span><small>Medium ↗</small></a></li>
+                    <li><a href="https://medium.com/@khlebobul/adding-a-bit-of-generative-art-to-a-flutter-project-13b22dd4f274" target="_blank" rel="noreferrer"><span>Generative art in a Flutter project</span><small>Medium ↗</small></a></li>
+                    <li><a href="https://medium.com/@khlebobul/animated-grid-background-in-flutter-fda98db76bdb" target="_blank" rel="noreferrer"><span>Animated grid background in Flutter</span><small>Medium ↗</small></a></li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <a href="#top">Back to top ↑</a>
+        </footer>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            renderProjects('projects-container', projectsData);
-            renderProjects('experiments-container', experimentsData);
-
-            // Update counts
-            document.getElementById('projects-count').textContent = projectsData.length;
-            document.getElementById('experiments-count').textContent = experimentsData.length;
-        });
-    </script>
 </body>
 
 </html>
