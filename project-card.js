@@ -68,12 +68,6 @@ function renderProjects(containerId, projects) {
 // Projects data
 const projectsData = [
   {
-    title: "speed reader",
-    description: "macos app for speed reading with rsvp technology",
-    mainLink: "https://speed-reader.pro",
-    additionalLinks: [],
-  },
-  {
     title: "speed reader (extension)",
     description: "chrome extension to improve reading speed with fast, sequential visual presentation",
     mainLink: "https://chromewebstore.google.com/detail/speed-reader/iifbkjcdekfokhpjbiabfgjlloabpdlp",
