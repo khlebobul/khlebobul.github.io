@@ -68,12 +68,6 @@ function renderProjects(containerId, projects) {
 // Projects data
 const projectsData = [
   {
-    title: "speed reader (extension)",
-    description: "chrome extension to improve reading speed with fast, sequential visual presentation",
-    mainLink: "https://chromewebstore.google.com/detail/speed-reader/iifbkjcdekfokhpjbiabfgjlloabpdlp",
-    additionalLinks: [],
-  },
-  {
     title: "pegma",
     description: "pure challenge of the classic peg solitaire — free, open source, and fun to master!",
     mainLink: "https://pegma.vercel.app",
@@ -142,61 +136,9 @@ const projectsData = [
     ],
   },
   {
-    title: "use_scramble",
-    description: "lightweight package for random text animations",
-    mainLink: "https://pub.dev/packages/use_scramble",
-    additionalLinks: [
-      {
-        title: "github",
-        url: "https://github.com/khlebobul/use_scramble",
-      },
-    ],
-  },
-  {
-    title: "gen_art_bg",
-    description: "animated generative art backgrounds collection for flutter",
-    mainLink: "https://pub.dev/packages/gen_art_bg",
-    additionalLinks: [
-      {
-        title: "github",
-        url: "https://github.com/khlebobul/gen_art_bg",
-      },
-    ],
-  },
-  {
-    title: "table of contents generator",
-    description: "chrome extension to generate table of contents for any webpage",
-    mainLink: "https://chromewebstore.google.com/detail/table-of-contents-generat/epdcdkmalfmenpieemggjjijcnnohfoo",
-    additionalLinks: [],
-  },
-  {
-    title: "pixel art",
-    description: "images → pixel art chrome extension",
-    mainLink: "https://chromewebstore.google.com/detail/pixel-art/hoelbnpckhabboheiepjdehipgmlkina",
-    additionalLinks: [],
-  },
-  {
     title: "raycast extensions",
     description: "helpful raycast extensions for developers",
     mainLink: "https://www.raycast.com/khlebobul",
-    additionalLinks: [],
-  },
-  {
-    title: "square ribbon",
-    description: "figma plugin",
-    mainLink: "https://www.figma.com/community/plugin/1441862652881971511/square-ribbon",
-    additionalLinks: [],
-  },
-  {
-    title: "figure 8",
-    description: "companion for maintaining eye health",
-    mainLink: "https://khlebobul26.gumroad.com/l/figure8",
-    additionalLinks: [],
-  },
-  {
-    title: "wave logo generator",
-    description: "logo buddy",
-    mainLink: "https://wave-logo.vercel.app/",
     additionalLinks: [],
   },
 ];
