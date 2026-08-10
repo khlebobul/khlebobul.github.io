@@ -146,6 +146,12 @@ const projectsData = [
 // Experiments data
 const experimentsData = [
   {
+    title: "speed reader",
+    description: "native macOS speed reader using RSVP and ORP — PDFs, EPUB, DOCX, articles, OCR, and four focused modes",
+    mainLink: "https://github.com/khlebobul/speed-reader",
+    additionalLinks: [],
+  },
+  {
     title: "flutter voice control example app",
     description: "flutter app example with local speech recognition and voice command control using sherpa-onnx",
     mainLink: "https://github.com/khlebobul/flutter_voice_control_example_app",
