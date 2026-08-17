@@ -238,6 +238,10 @@ a:focus-visible {
     color: #aaa9a2;
 }
 
+.project-card:first-child:hover .project-description {
+    color: inherit;
+}
+
 .project-links {
     position: relative;
     z-index: 1;
