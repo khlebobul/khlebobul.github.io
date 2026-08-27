@@ -68,6 +68,25 @@ function renderProjects(containerId, projects) {
 // Projects data
 const projectsData = [
   {
+    title: "minimo (video)",
+    description: "shrink videos directly on your device — no cloud upload, no subscription",
+    mainLink: "https://github.com/minimo-pro/minimo_video",
+    additionalLinks: [
+      {
+        title: "app store",
+        url: "https://apps.apple.com/us/app/minimo-video/id6787456951",
+      },
+      {
+        title: "google play",
+        url: "https://play.google.com/store/apps/details?id=com.khlebobul.minimo_video",
+      },
+      {
+        title: "github",
+        url: "https://github.com/minimo-pro/minimo_video",
+      },
+    ],
+  },
+  {
     title: "pegma",
     description: "pure challenge of the classic peg solitaire — free, open source, and fun to master!",
     mainLink: "https://pegma.vercel.app",
