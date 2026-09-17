@@ -165,6 +165,23 @@ const projectsData = [
 // Experiments data
 const experimentsData = [
   {
+    title: "esp pomodoro timer",
+    description: "ESP32-S3 pomodoro timer controlled by orientation — Waveshare 1.8\" AMOLED + ultra-smooth 6-axis IMU, retro pixel LVGL UI",
+    mainLink: "https://github.com/khlebobul/esp_pomodoro_timer",
+    additionalLinks: [],
+  },
+  {
+    title: "esp ble finder",
+    description: "findphone on a Waveshare ESP32-S3-Touch-AMOLED-1.8 — hunt nearby BLE by RSSI, dotted UI, parking-sensor clicks",
+    mainLink: "https://github.com/khlebobul/esp_ble_finder",
+    additionalLinks: [
+      {
+        title: "featured on hackster",
+        url: "https://www.hackster.io/news/track-down-your-misplaced-phone-instantly-with-an-esp32-94822dc302eb",
+      },
+    ],
+  },
+  {
     title: "speed reader",
     description: "native macOS speed reader using RSVP and ORP — PDFs, EPUB, DOCX, articles, OCR, and four focused modes",
     mainLink: "https://github.com/khlebobul/speed-reader",
