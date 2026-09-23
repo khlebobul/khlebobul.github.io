@@ -183,6 +183,10 @@ const experimentsData = [
         title: "featured on xda",
         url: "https://www.xda-developers.com/this-cool-esp32s3-project-is-like-a-geiger-counter-but-for-finding-your-phone-instead-of-radiation/",
       },
+      {
+        title: "waveshare docs",
+        url: "https://docs.waveshare.com/ESP32-S3-Touch-AMOLED-1.8/Resources-And-Documents#gleb-shalimov---hunt-nearby-ble-by-rssi-dotted-ui-parking-sensor-clicks",
+      },
     ],
   },
   {
