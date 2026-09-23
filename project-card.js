@@ -179,7 +179,17 @@ const experimentsData = [
         title: "featured on hackster",
         url: "https://www.hackster.io/news/track-down-your-misplaced-phone-instantly-with-an-esp32-94822dc302eb",
       },
+      {
+        title: "featured on xda",
+        url: "https://www.xda-developers.com/this-cool-esp32s3-project-is-like-a-geiger-counter-but-for-finding-your-phone-instead-of-radiation/",
+      },
     ],
+  },
+  {
+    title: "esp busy tag",
+    description: "open-source ESP32 alternative to Busy Tag on Waveshare ESP32-S3-Touch-AMOLED-1.8 — FREE/BUSY/MEETING full-screen, button or USB control",
+    mainLink: "https://github.com/khlebobul/esp_busy_tag",
+    additionalLinks: [],
   },
   {
     title: "speed reader",
