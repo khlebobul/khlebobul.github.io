@@ -68,6 +68,25 @@ function renderProjects(containerId, projects) {
 // Projects data
 const projectsData = [
   {
+    title: "minimo (photo)",
+    description: "shrink photos directly on your device — no cloud upload, no subscription",
+    mainLink: "https://minimo-photo.vercel.app",
+    additionalLinks: [
+      {
+        title: "app store",
+        url: "https://apps.apple.com/us/app/minimo-photo-compressor/id6822256099",
+      },
+      {
+        title: "google play",
+        url: "https://play.google.com/store/apps/details?id=com.khlebobul.minimo_photo",
+      },
+      {
+        title: "github",
+        url: "https://github.com/minimo-pro/minimo_photo",
+      },
+    ],
+  },
+  {
     title: "minimo (video)",
     description: "shrink videos directly on your device — no cloud upload, no subscription",
     mainLink: "https://github.com/minimo-pro/minimo_video",
